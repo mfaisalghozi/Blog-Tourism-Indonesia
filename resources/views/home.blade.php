@@ -18,30 +18,15 @@
         </div>
     </div>
 </div> --}}
-<div class="jumbotron jumbotron-fluid">
-    <div class="container text-center" style="font-family: 'Lora', serif;">
-      <h1 class="display-4">Wonderful Journey</h1>
-      <p class="lead">All About Indonesia In Words</p>
-    </div>
-</div>
-<div
-    class="p-5 text-center bg-image"
-    style="
-      background-image: url('/images/indo-beach-nature.jpg');
-      height: 400px;
-    "
-  >
-    <div class="mask" style="background-color: rgba(0, 0, 0, 0.6)">
+<div class="text-center bg-image" style="background-image: url('/images/indo-sawah-nature.jpg');height: 400px;background-position: center;">
+    <div class="mask w-100 h-100" style="background-color: rgba(0, 0, 0, 0.3)">
       <div class="d-flex justify-content-center align-items-center h-100">
-        <div class="text-white">
-          <h1 class="mb-3">Heading</h1>
-          <h4 class="mb-3">Subheading</h4>
-          <a class="btn btn-outline-light btn-lg" href="#!" role="button"
-            >Call to action</a
-          >
+        <div class="text-white" style="font-family: 'Lora', serif;">
+          <h1 class="display-3">Wonderful Journey</h1>
+          <h4 class="display-5">All About Indonesia In Words</h4>
         </div>
       </div>
     </div>
-  </div>
+</div>
 
 @endsection
