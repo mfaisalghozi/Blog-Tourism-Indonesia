@@ -17,4 +17,13 @@ class Article extends Model
     {
         return $this->belongsTo(Category::class);
     }
+
+    /**
+     * The attributes that are mass assignable.
+     *
+     * @var array
+     */
+    protected $fillable = [
+        'title', 'description', 'image', 'user_id', 'category_id'
+    ];
 }

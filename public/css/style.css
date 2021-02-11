@@ -6,6 +6,8 @@ html,body{
 }
 
 .kotak{
+    width: 358px;
+    height: 461px;
     transition: box-shadow .3s;
 }
 
@@ -43,4 +45,13 @@ html,body{
 .article-text p{
     margin-top: 30px;
     margin-bottom: 30px;
+}
+
+.form-new-blog{
+    width: 500px;
+}
+
+.image-article-detail{
+    width: 730px;
+    height: 489px;
 }

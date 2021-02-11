@@ -31,6 +31,12 @@
     {{-- Icont Font Awesome --}}
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    {{-- Favicon --}}
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+    <link rel="manifest" href="/images/site.webmanifest">
+
 </head>
 <body>
     <div id="app" class="h-100">
@@ -45,22 +51,22 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent" style="font-family: 'Playfair Display', serif;font-size: 15px;">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
-                        {{-- for guest only --}}
-                        @guest
                         <li class="nav-item">
                             <a class="nav-link" href="/home">Home</a>
                         </li>
+                        {{-- for guest only --}}
+                        @guest
                         <li class="nav-item dropdown show">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                  Category
                                 </a>
                               
                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                  <a class="dropdown-item" href="#">🏖️ Beach</a>
-                                  <a class="dropdown-item" href="#">⛰️ Mountain</a>
-                                  <a class="dropdown-item" href="#">🎢 Theme Park</a>
-                                  <a class="dropdown-item" href="#">🏛️ City</a>
-                                  <a class="dropdown-item" href="#">🌲 Nature</a>
+                                  <a class="dropdown-item {{ Request::url() == url('/category/1') ? 'active' : '' }}" href="/category/1">🏖️ Beach</a>
+                                  <a class="dropdown-item {{ Request::url() == url('/category/2') ? 'active' : '' }}" href="/category/2">⛰️ Mountain</a>
+                                  <a class="dropdown-item {{ Request::url() == url('/category/3') ? 'active' : '' }}" href="/category/3">🎢 Theme Park</a>
+                                  <a class="dropdown-item {{ Request::url() == url('/category/4') ? 'active' : '' }}" href="/category/4">🏛️ City</a>
+                                  <a class="dropdown-item {{ Request::url() == url('/category/5') ? 'active' : '' }}" href="/category/5">🌲 Nature</a>
                                 </div>
                         </li>
                         <li class="nav-item">
@@ -78,7 +84,7 @@
                             <a class="nav-link" href="/profile/{{Auth::user()->id}}">Profil</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Blog</a>
+                            <a class="nav-link" href="/blog/{{Auth::user()->id}}">Blog</a>
                         </li>
                         @endguest
                     </ul>

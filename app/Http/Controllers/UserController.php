@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\User;
+use App\Article;
 
 class UserController extends Controller
 {
@@ -28,5 +29,11 @@ class UserController extends Controller
         ]);
         // Session::flash('success', "Success!");
         return redirect('/');
+    }
+
+    public function blog($id){
+        //Searching blog with specified user ID
+        $article = Article::Where('user_id',$id)->get();
+        return view('user/blog', ['article' => $article]);
     }
 }

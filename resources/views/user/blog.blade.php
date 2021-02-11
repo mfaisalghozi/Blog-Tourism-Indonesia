@@ -5,7 +5,8 @@
     <div class="row">
         <div class="col-lg-2"></div>
         <div class="col-lg-8">
-            <table class="table">
+            <a href="/blog/newBlog" class="btn btn-outline-success">+ Create Blog</a>
+            <table class="table my-3">
                 <thead>
                   <tr>
                     <th scope="col">Article ID</th>
@@ -23,7 +24,7 @@
                             @method('delete')
                             @csrf
                             <div class="form-group row">
-                              <button type="submit" class="btn btn-outline-danger">Delete</button>
+                                <button class="btn btn-outline-dark" type="submit">Delete</button>
                             </div>
                         </form>
                     </td>

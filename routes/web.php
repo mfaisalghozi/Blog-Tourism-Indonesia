@@ -26,6 +26,13 @@ Route::delete('/user/delete/{id}', 'HomeController@userDestroy');
 
 // Routing for user role
 Route::get('/profile/{id}', 'UserController@index');
+Route::get('/blog/newBlog', 'ArticleController@create');
+Route::get('/blog/{id}', 'UserController@blog');
+Route::post('/blog/{id}', 'ArticleController@store');
 Route::patch('/profile/{id}/edit', 'UserController@update');
+Route::delete('/blog/delete/{id}', 'ArticleController@destroy');
+
+//Routing For Each Category
+Route::get('/category/{id}', 'HomeController@category');
 
 Auth::routes();

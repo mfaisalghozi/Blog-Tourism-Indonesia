@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\User;
+use App\Article;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -25,8 +26,15 @@ class HomeController extends Controller
      * @return \Illuminate\Contracts\Support\Renderable
      */
     public function index()
-    {
-        return view('home');
+    {   
+        $articles = Article::All();
+        // return $articles;
+        return view('home', ['articles' => $articles]);
+    }
+
+    public function category($id){
+        $articles = DB::table('articles')->Where('category_id', $id)->get();
+        return view('/category', ['articles' => $articles]);
     }
 
     public function welcome(){
@@ -39,8 +47,8 @@ class HomeController extends Controller
     }
 
     public function showUserArticle(){
-        // $article = DB::table('articles')->get();
-        return view('admin/showArticle');
+        $article = Article::All();
+        return view('admin/showArticle', ['article' => $article]);
     }
 
     /**
