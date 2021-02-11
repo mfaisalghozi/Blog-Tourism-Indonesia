@@ -8,7 +8,7 @@
 -   Creating category page
 -   creating detail story/article page (11/02/2021) ✔️
 -   Refixing login & register page
--   Creating admin feature : Admin & User Page (11/02/2021)
+-   Creating admin feature : Admin Menu (Showing article user list) & User Menu ✔️ (11/02/2021)
 -   Creating user feature : profil & blog
 -   Creating 'create article page'
 

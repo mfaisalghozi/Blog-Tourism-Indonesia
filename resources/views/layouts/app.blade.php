@@ -30,7 +30,7 @@
 
 </head>
 <body>
-    <div id="app">
+    <div id="app" class="h-100">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
                 <a class="navbar-brand" href="{{ url('/') }}" style="font-family: 'Playfair Display', serif;">
                     Story of Indonesia
@@ -42,6 +42,8 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent" style="font-family: 'Playfair Display', serif;font-size: 15px;">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
+                        {{-- for guest only --}}
+                        @guest
                         <li class="nav-item">
                             <a class="nav-link" href="/home">Home</a>
                         </li>
@@ -61,6 +63,21 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">About Us</a>
                         </li>
+                        @elseif (Auth::user()->role == 'admin')
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Admin</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/user">User</a>
+                        </li>
+                        @elseif (Auth::user()->role == 'user')
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Profil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Blog</a>
+                        </li>
+                        @endguest
                     </ul>
 
                     <!-- Right Side Of Navbar -->
@@ -98,7 +115,7 @@
                 </div>
         </nav>
 
-        <main >
+        <main class="h-100">
             @yield('content')
         </main>
     </div>

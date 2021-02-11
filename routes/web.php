@@ -19,4 +19,8 @@ Route::get('/home', 'HomeController@index')->name('home');
 // Routing to Article
 Route::get('/article/{id}', 'ArticleController@show');
 
+// Routing get all users
+Route::get('/user', 'HomeController@showUser');
+Route::delete('/user/delete/{id}', 'HomeController@userDestroy');
+
 Auth::routes();
