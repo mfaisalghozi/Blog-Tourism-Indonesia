@@ -18,19 +18,6 @@
         </div>
     </div>
 </div> --}}
-<div class="text-center bg-image" style="background-image: url('/images/indo-sawah-nature.jpg');background-position: center;height: 40vh;">
-    <div class="mask h-100" style="background-color: rgba(0, 0, 0, 0.4)">
-      <div class="d-flex justify-content-center align-items-center h-100">
-        <div class="text-white" style="font-family: 'Lora', serif;">
-          <h1 class="display-3">Wonderful <span style="color: red">Journey</span></h1>
-          <h4 class="display-5">All About Indo<span style="color: red">nesia In Words</span></h4>
-          <a class="mt-2 btn btn-outline-light btn-lg" href="#!" role="button">
-            View Article
-          </a>
-        </div>
-      </div>
-    </div>
-</div>
 
 <div class="container recommended Article my-4">
     <div class="row">
@@ -120,12 +107,13 @@
     <div class="row p-2 mt-4">
         @for($rep=1;$rep<=20;$rep++)
         <div class="col-lg-4 p-2">
-            <a href="#" style="text-decoration: none;">
+            <a href="/article/{{$rep}}" style="text-decoration: none;">
                 <div class="card p-3 mb-5 bg-white rounded kotak">
                     <img class="card-img-top" src="/images/blogging.svg" alt="blogging">
-                    <div class="card-body text-dark">
-                        <h4 class="card-title">Article {{$rep}}</h4>
-                        <p class="card-text">Text Number {{$rep}}</p>
+                    <div class="card-body text-dark justify-content-between" style="text-decoration: none;">
+                        <h4 class="card-title text-dark">Paintai Kuta Bali {{$rep}}</h4>
+                        <p class="card-text text-dark">{{substr("Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore praesentium magni cupiditate illum eveniet ducimus quam nam eligendi officia magnam impedit voluptatem repudiandae, accusantium, ea vitae aperiam repellat mollitia eos.",0,70)}}...</p>
+                        <p class="mt-3"><span class="text-dark">Category:</span> <a href="#" class="">Beach</a></p>
                     </div>
                 </div>
             </a>

@@ -13,3 +13,22 @@ html,body{
     box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
     border: 2px solid rgba(0, 0, 0, 0.175);
 }
+
+.text-detail-article{
+    margin: 0px;
+    font-size: 1rem;
+}
+
+.text-detail-article a:link{
+    text-decoration: none;
+}
+
+.article-text {
+    font-family: 'Noto Serif', serif;
+    font-size: 1.1rem;
+}
+
+.article-text p{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}

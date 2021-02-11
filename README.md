@@ -6,9 +6,9 @@
 
 -   Creating HomePage & Setup DB (10/02/2021) ✔️
 -   Creating category page
--   creating detail story/article page
+-   creating detail story/article page (11/02/2021) ✔️
 -   Refixing login & register page
--   Creating admin feature : Admin & User Page
+-   Creating admin feature : Admin & User Page (11/02/2021)
 -   Creating user feature : profil & blog
 -   Creating 'create article page'
 
@@ -20,3 +20,4 @@ final exam project required to create a web-based application using Laravel 7 fr
 
 -   Homepage background image : pinterest user [(@Capture Indonesia)](https://id.pinterest.com/pin/791789178208969621/)
 -   Illustration : [undraw.co](https://undraw.co/)
+-   Article Detail Page image : [Unsplash](https://unsplash.com/photos/u0lAovoUsaU)

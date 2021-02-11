@@ -13,9 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'HomeController@index');
-
+Route::get('/', 'HomeController@welcome');
 Route::get('/home', 'HomeController@index')->name('home');
 
+// Routing to Article
+Route::get('/article/{id}', 'ArticleController@show');
 
 Auth::routes();
