@@ -9,10 +9,9 @@
 -   Creating category page
 -   creating detail story/article page (11/02/2021) ✔️
 -   Refixing login & register page (11/02/2021) ✔️
--   Creating admin feature : Admin Menu (Showing article user list) & User Menu ✔️ (11/02/2021)
--   Creating user feature : change profile (11/02/2020) ✔️ & blog Setting
+-   Creating admin feature : Admin Menu (Showing article user list) ✔️ & User Menu ✔️ (11/02/2021)
+-   Creating user feature : change profile (11/02/2020) ✔️ & blog (CRUD of article) Setting
 -   Greeting Page for User
--   Creating 'create article page'
 
 ## ❓ About
 
