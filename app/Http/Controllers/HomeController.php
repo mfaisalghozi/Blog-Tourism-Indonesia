@@ -34,10 +34,13 @@ class HomeController extends Controller
     }
 
     public function showUser(){
-
         $users = DB::table('users')->get();
+        return view('admin/showUser', ['users' => $users]);
+    }
 
-        return view('user/showUser', ['users' => $users]);
+    public function showUserArticle(){
+        // $article = DB::table('articles')->get();
+        return view('admin/showArticle');
     }
 
     /**
