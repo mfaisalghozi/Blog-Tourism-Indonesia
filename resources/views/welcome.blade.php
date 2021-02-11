@@ -24,7 +24,7 @@
         <div class="text-white" style="font-family: 'Lora', serif;">
           <h1 class="display-3">Wonderful <span style="color: red">Journey</span></h1>
           <h4 class="display-5">All About Indo<span style="color: red">nesia In Words</span></h4>
-          <a class="mt-2 btn btn-outline-light btn-lg" href="#!" role="button">
+          <a class="mt-3 btn btn-outline-light btn-lg" href="/home" role="button">
             View Article
           </a>
         </div>

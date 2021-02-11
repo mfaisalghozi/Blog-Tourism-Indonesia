@@ -28,11 +28,14 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
 
+    {{-- Icont Font Awesome --}}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <body>
     <div id="app" class="h-100">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
-                <a class="navbar-brand" href="{{ url('/') }}" style="font-family: 'Playfair Display', serif;">
+                <a class="navbar-brand" href="{{ url('/') }}" style="font-family: 'Playfair Display', serif;color: red;">
                     Story of Indonesia
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
@@ -53,11 +56,11 @@
                                 </a>
                               
                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                  <a class="dropdown-item" href="#">Beach</a>
-                                  <a class="dropdown-item" href="#">Mountain</a>
-                                  <a class="dropdown-item" href="#">Theme Park</a>
-                                  <a class="dropdown-item" href="#">City</a>
-                                  <a class="dropdown-item" href="#">Waterfall</a>
+                                  <a class="dropdown-item" href="#">🏖️ Beach</a>
+                                  <a class="dropdown-item" href="#">⛰️ Mountain</a>
+                                  <a class="dropdown-item" href="#">🎢 Theme Park</a>
+                                  <a class="dropdown-item" href="#">🏛️ City</a>
+                                  <a class="dropdown-item" href="#">🌲 Nature</a>
                                 </div>
                         </li>
                         <li class="nav-item">
@@ -72,7 +75,7 @@
                         </li>
                         @elseif (Auth::user()->role == 'user')
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Profil</a>
+                            <a class="nav-link" href="/profile/{{Auth::user()->id}}">Profil</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Blog</a>

@@ -14,13 +14,25 @@ html,body{
     border: 2px solid rgba(0, 0, 0, 0.175);
 }
 
+.kotak-profil {
+    height: 400px;
+    width: 400px;
+}
+
 .text-detail-article{
     margin: 0px;
     font-size: 1rem;
 }
 
+
+
 .text-detail-article a:link{
     text-decoration: none;
+    color: black;
+}
+
+.text-detail-article a:hover{
+    color: red;
 }
 
 .article-text {

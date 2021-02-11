@@ -14,9 +14,9 @@
                     <p class="text-detail-article">M Faisal Ghozi</p>
                 </div>
                 <div class="option text-detail-article">
-                    <a href="#">like</a>
-                    <a href="#">share</a>
-                    <a href="#">comment</a>
+                    <a href="#" class="mx-2"><i class="fa fa-thumbs-o-up" style="font-size:22px"></i></a>
+                    <a href="#" class="mx-2"><i class="fa fa-book" style="font-size:22px"></i></a>
+                    <a href="#" class="mx-2"><i class="fa fa-comment-o" style="font-size:22px"></i></a>
                 </div>
             </div>
             <img src="/images/indo-mountain-nature.jpg" class="img-fluid mb-4" alt="Responsive image">

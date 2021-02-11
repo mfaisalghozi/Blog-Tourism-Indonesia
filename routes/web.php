@@ -19,9 +19,13 @@ Route::get('/home', 'HomeController@index')->name('home');
 // Routing to Article
 Route::get('/article/{id}', 'ArticleController@show');
 
-// Routing get all users
+// Routing for admin role
 Route::get('/user', 'HomeController@showUser');
 Route::get('/user/article', 'HomeController@showUserArticle');
 Route::delete('/user/delete/{id}', 'HomeController@userDestroy');
+
+// Routing for user role
+Route::get('/profile/{id}', 'UserController@index');
+Route::patch('/profile/{id}/edit', 'UserController@update');
 
 Auth::routes();
