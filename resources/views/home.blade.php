@@ -111,7 +111,7 @@
                 <div class="card p-3 mb-5 bg-white rounded kotak">
                     <img class="card-img-top" src="{{$ar->image}}" alt="blogging">
                     <div class="card-body text-dark d-flex flex-column justify-content-between" style="text-decoration: none;">
-                        <h4 class="card-title text-dark">{{$ar->title}}</h4>
+                        <h4 class="card-title text-dark">{{substr($ar->title,0,50)}}</h4>
                         <p class="card-text text-dark">{{substr($ar->description,0,70)}}...</p>
                         {{$place=""}}
                         @switch($ar->category_id)
