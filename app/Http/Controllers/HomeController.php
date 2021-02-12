@@ -41,7 +41,7 @@ class HomeController extends Controller
     }
 
     public function category($id){
-        $articles = DB::table('articles')->Where('category_id', $id)->get();
+        $articles = Article::with('category')->Where('category_id', $id)->get();
         return view('/category', ['articles' => $articles]);
     }
 
