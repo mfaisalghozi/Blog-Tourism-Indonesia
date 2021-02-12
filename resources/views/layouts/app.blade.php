@@ -135,7 +135,7 @@
 
         <footer id="footer">
             <nav class="navbar navbar-dark bg-dark d-flex justify-content-center " style="font-family: 'Lora', serif;">
-                <span class="navbar-brand mb-0 h1"><a class="text-light" style="text-decoration: none;" href="https://github.com/mfaisalghozi" target="_blank">Created With <i class='fas fa-heart' style='font-size:17px'></i> By MFaisalGhozi</a></span>
+                <span class="navbar-brand mb-0 h1"><a class="text-light" style="text-decoration: none;" href="https://github.com/mfaisalghozi" target="_blank">Created With 🤍 By MFaisalGhozi</a></span>
               </nav>
         </footer>
     </div>
