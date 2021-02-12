@@ -10,6 +10,7 @@
                   <tr>
                     <th scope="col">ID</th>
                     <th scope="col">Name</th>
+                    <th scope="col">Role</th>
                     <th scope="col">Email</th>
                     <th scope="col">Action</th>
                   </tr>
@@ -19,6 +20,7 @@
                   <tr>
                     <th scope="row">{{$u->id}}</th>
                     <td>{{$u->name}}</td>
+                    <td>{{$u->role}}</td>
                     <td>{{$u->email}}</td>
                     <td>
                         <form method="POST" action="/user/delete/{{$u->id}}">

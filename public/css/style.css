@@ -23,13 +23,21 @@ html,body{
 
 .text-detail-article{
     margin: 0px;
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 
 
 .text-detail-article a:link{
     text-decoration: none;
+    color: black;
+}
+
+.text-detail-article a:visited{
+    color: black;
+}
+
+.text-detail-article a:active{
     color: black;
 }
 
@@ -54,4 +62,42 @@ html,body{
 .image-article-detail{
     width: 730px;
     height: 489px;
+}
+
+.image-position-1{
+    position: relative;
+    right: 200px;
+    top: 100px;
+}
+
+.image-position-2{
+    position: relative;
+    left: 230px;
+    bottom: 50px;
+}
+
+.image-position-3{
+    position: relative;
+    right: 100px;
+    bottom: 50px;
+}
+
+.image-header-1{
+    position: relative;
+    top: 80px;
+    right: 230px;
+}
+
+.image-header-2{
+    position: relative;
+    z-index: 100;
+    bottom: 500px;
+    left: 180px;
+}
+
+.image-header-3{
+    position: relative;
+    z-index: 50;
+    bottom: 700px;
+    left: 50px;
 }

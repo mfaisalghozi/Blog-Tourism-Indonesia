@@ -30,6 +30,7 @@
 
     {{-- Icont Font Awesome --}}
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 
     {{-- Favicon --}}
     <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
@@ -124,9 +125,15 @@
                 </div>
         </nav>
 
-        <main class="h-100">
+        <main style="min-height: 100%;;">
             @yield('content')
         </main>
+
+        <footer id="footer">
+            <nav class="navbar navbar-dark bg-dark d-flex justify-content-center " style="font-family: 'Lora', serif;">
+                <span class="navbar-brand mb-0 h1"><a class="text-light" style="text-decoration: none;" href="https://github.com/mfaisalghozi" target="_blank">Made With <i class='fas fa-heart' style='font-size:17px'></i> By MFaisalGhozi</a></span>
+              </nav>
+        </footer>
     </div>
 </body>
 </html>

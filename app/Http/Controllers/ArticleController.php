@@ -44,7 +44,7 @@ class ArticleController extends Controller
             if ($request->file('image')->isValid()) {
                 //
                 $validated = $request->validate([
-                    'name' => 'required|string|max:20',
+                    'name' => 'required|string',
                     'category' => 'required|string',
                     'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
                     'description' => 'required|string'
@@ -121,3 +121,4 @@ class ArticleController extends Controller
         return redirect('/home');
     }
 }
+

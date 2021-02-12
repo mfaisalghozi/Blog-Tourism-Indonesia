@@ -112,26 +112,29 @@
                     <img class="card-img-top" src="{{$ar->image}}" alt="blogging">
                     <div class="card-body text-dark d-flex flex-column justify-content-between" style="text-decoration: none;">
                         <h4 class="card-title text-dark">{{substr($ar->title,0,50)}}</h4>
-                        <p class="card-text text-dark">{{substr($ar->description,0,70)}}...</p>
-                        {{$place=""}}
-                        @switch($ar->category_id)
-                            @case(1)
-                                {{$place="Beach"}}
-                            @break
-                            @case(2)
-                                {{$place="Mountain"}}
-                            @break
-                            @case(3)
-                                {{$place="Theme Park"}}
-                            @break
-                            @case(4)
-                                {{$place="City"}}
-                            @break
-                            @case(5)
-                                {{$place="Nature"}}
-                            @break
-                        @endswitch
-                        <p class="mt-3"><span class="text-dark">Category:</span> <a href="/category/{{$ar->category_id}}" class="">{{$place}}</a></p>
+                        <p class="card-text text-dark">{{substr($ar->description,0,100)}}...</p>
+                        <p class="my-0">
+                            <span class="text-dark">Category:</span> 
+                            <a href="/category/{{$ar->category_id}}" class="">
+                                @switch($ar->category_id)
+                                    @case(1)
+                                        {{$place="Beach"}}
+                                    @break
+                                    @case(2)
+                                        {{$place="Mountain"}}
+                                    @break
+                                    @case(3)
+                                        {{$place="Theme Park"}}
+                                    @break
+                                    @case(4)
+                                        {{$place="City"}}
+                                    @break
+                                    @case(5)
+                                        {{$place="Nature"}}
+                                    @break
+                                @endswitch
+                            </a>
+                        </p>
                     </div>
                 </div>
             </a>

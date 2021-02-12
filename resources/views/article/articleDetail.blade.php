@@ -10,13 +10,13 @@
             font-family: 'Rubik', sans-serif;">{{$article->title}}</h1>
             <div class="mt-2 mb-4 d-flex flex-row justify-content-between align-items-center">
                 <div class="author d-flex flex-row my-2 align-items-center">
-                    <img src="{{url('/images/anon-user.png')}}" class="rounded-circle float-left" alt="user" style="height: 30px;weight: 30px;">
+                    <img src="{{url('/images/anon-user.png')}}" class="rounded-circle float-left" alt="user" style="height: 28px;weight: 28px;">
                     <p class="text-detail-article">{{$article->user->name}}</p>
                 </div>
-                <div class="option text-detail-article">
-                    <a href="#" class="mx-2"><i class="fa fa-thumbs-o-up" style="font-size:22px"></i></a>
+                <div class="option text-detail-article";">
+                    <a href="#" class="mx-2"><i class='fas fa-thumbs-up' style='font-size:22px'></i></a>
                     <a href="#" class="mx-2"><i class="fa fa-book" style="font-size:22px"></i></a>
-                    <a href="#" class="mx-2"><i class="fa fa-comment-o" style="font-size:22px"></i></a>
+                    <a href="#" class="mx-2"><i class='fas fa-comment-dots' style='font-size:22px'></i></a>
                 </div>
             </div>
             <img src="{{$article->image}}" class="img-fluid mb-4 image-article-detail" alt="Responsive image">

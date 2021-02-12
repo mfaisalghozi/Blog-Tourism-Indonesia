@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container h-100">
+<div class="container" style="height: 100vh">
     <div class="row justify-content-center align-items-center h-75">
         <div class="col-md-8">
             <div class="card">

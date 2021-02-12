@@ -4,7 +4,7 @@
 
 ## 🏭 Production Progress
 
--   Creating Landing Page
+-   Creating Landing Page (12/02/2021) ✔️
 -   Greeting Page for User
 -   Creating Abous Us Page
 -   Creating HomePage & Setup DB (10/02/2021) ✔️

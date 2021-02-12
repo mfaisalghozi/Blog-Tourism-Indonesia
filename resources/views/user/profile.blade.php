@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container h-100">
+<div class="container" style="height: 100vh;">
     <div class="d-flex justify-content-center align-items-center h-75">
         <div class="shadow-lg bg-white rounded kotak-profil">
             <h3 class="display-4 bg-dark text-light text-center rounded-top">Profile</h3>
