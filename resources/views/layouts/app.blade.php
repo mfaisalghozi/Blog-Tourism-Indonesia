@@ -34,7 +34,7 @@
 
     {{-- Icont Font Awesome --}}
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    {{-- <script src="https://kit.fontawesome.com/53d273b61d.js" crossorigin="anonymous"></script> --}}
+    <script src="{{secure_url('https://kit.fontawesome.com/53d273b61d.js')}}" crossorigin="anonymous"></script>
 
     {{-- Favicon --}}
     <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
