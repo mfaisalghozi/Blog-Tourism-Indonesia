@@ -6,6 +6,7 @@
 
 -   Creating Landing Page
 -   Greeting Page for User
+-   Creating Abous Us Page
 -   Creating HomePage & Setup DB (10/02/2021) ✔️
 -   Creating category page ✔️ (11/02/2021)
 -   creating detail story/article page (11/02/2021) ✔️
