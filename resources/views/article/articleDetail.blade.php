@@ -13,7 +13,7 @@
                     <img src="{{url('/images/anon-user.png')}}" class="rounded-circle float-left" alt="user" style="height: 28px;weight: 28px;">
                     <p class="text-detail-article">{{$article->user->name}}</p>
                 </div>
-                <div class="option text-detail-article";">
+                <div class="option text-detail-article">
                     <a href="#" class="mx-2"><i class="fa fa-thumbs-up" style="font-size:22px"></i></a>
                     <a href="#" class="mx-2"><i class="fa fa-bookmark" style="font-size:22px"></i></a>
                     <a href="#" class="mx-2"><i class="fa fa-comments" style="font-size:22px"></i></a>
