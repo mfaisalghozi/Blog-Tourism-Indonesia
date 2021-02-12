@@ -116,3 +116,8 @@ html,body{
     text-decoration: none;
     color: red;
 }
+
+.navigasi-override-style li a{
+    color: black !important;
+}
+

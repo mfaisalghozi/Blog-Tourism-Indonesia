@@ -41,7 +41,7 @@
 </head>
 <body>
     <div id="app" class="h-100">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+        <nav class="navbar navbar-expand-md navbar-light shadow-sm" style="background-color: #ecf0f1;">
                 <a class="navbar-brand" href="{{ url('/') }}" style="font-family: 'Playfair Display', serif;color: red;">
                     Story of Indonesia
                 </a>
@@ -49,7 +49,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent" style="font-family: 'Playfair Display', serif;font-size: 15px;">
+                <div class="collapse navbar-collapse navigasi-override-style" id="navbarSupportedContent" style="font-family: 'Playfair Display', serif;font-size: 15px;">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
@@ -131,7 +131,7 @@
 
         <footer id="footer">
             <nav class="navbar navbar-dark bg-dark d-flex justify-content-center " style="font-family: 'Lora', serif;">
-                <span class="navbar-brand mb-0 h1"><a class="text-light" style="text-decoration: none;" href="https://github.com/mfaisalghozi" target="_blank">Made With <i class='fas fa-heart' style='font-size:17px'></i> By MFaisalGhozi</a></span>
+                <span class="navbar-brand mb-0 h1"><a class="text-light" style="text-decoration: none;" href="https://github.com/mfaisalghozi" target="_blank">Created With <i class='fas fa-heart' style='font-size:17px'></i> By MFaisalGhozi</a></span>
               </nav>
         </footer>
     </div>

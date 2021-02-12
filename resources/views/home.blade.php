@@ -1,23 +1,6 @@
 @extends('layouts.app')
 
 @section('content')
-{{-- <div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Dashboard') }}</div>
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-                    {{ __('You are logged in!') }}
-                </div>
-            </div>
-        </div>
-    </div>
-</div> --}}
 
 <div class="container recommended Article my-4">
     
@@ -34,80 +17,41 @@
     <div class="row">
         <div class="col-lg-6 border-right d-flex justify-content-start align-items-center">
             <div class="d-flex flex-column">
-                <img src="{{url('/images/indo-beach-nature.jpg')}}" alt="article-image" style="width: 520px;height: 345px;">
+                <img src="{{$articleRandom->image}}" alt="article-image" style="width: 520px;height: 345px;">
                 <div class="author d-flex flex-row my-2 align-items-center">
                     <img src="{{url('/images/anon-user.png')}}" class="rounded-circle float-left" alt="user" style="height: 18px;weight: 18px;">
-                    <p style="margin: 0px">M Faisal Ghozi</p>
+                    <p style="margin: 0px">{{$articleRandom->user->name}}</p>
                 </div>
-                <h3><strong>My Trip into Beach Lombok Indonesia</strong></h3>
-                <h5>description</h5>
+                <h3><strong>{{$articleRandom->title}}</strong></h3>
+                <h5>{{substr($articleRandom->description,0,50)}}...</h5>
                 <div class="d-flex flex-row mt-2">
-                    <a href="#" style="text-decoration: none; color: black;">Read More</a>
+                    <a href="/article/{{$articleRandom->id}}" style="text-decoration: none; color: black;">Read More</a>
                 </div>
             </div>
         </div>
         <div class="col-lg-6 border-left p-4">
             <div class="d-flex flex-column justify-content-around">
-                <div class="contentOne my-2">
-                    <div class="row">
-                        <div class="col-lg-8 d-flex flex-column justify-content-between">
-                            <div class="author d-flex flex-row my-1 align-items-center">
-                                <img src="{{url('/images/anon-user.png')}}" class="rounded-circle float-left" alt="user" style="height: 18px;weight: 18px;">
-                                <p style="margin: 0px">M Faisal Ghozi</p>
+                @foreach($articleLatest as $al)
+                <a href="/article/{{$al->id}}" style="text-decoration: none;">
+                    <div class="contentOne my-2">
+                        <div class="row">
+                            <div class="col-lg-8 d-flex flex-column justify-content-between">
+                                <div class="authorAndTitle">
+                                    <div class="author d-flex flex-row my-1 ml-1 align-items-center">
+                                        <img src="{{url('/images/anon-user.png')}}" class="rounded-circle float-left" alt="user" style="height: 18px;weight: 18px;">
+                                        <p style="margin: 0px" class="text-dark">{{$al->user->name}}</p>
+                                    </div>
+                                    <h5 class="mx-2 text-dark my-1"><strong>{{substr($al->title,0,50)}}</strong></h5>
+                                </div>
+                                <p class="mx-2 mb-0 text-dark font-weight-light" style="font-weight: 200;">10 Jan, 2021</p>
                             </div>
-                            <h5 class="mx-2"><strong>Lorem ipsum dolor sit, amet consectetur adipisicing elit</strong></h5>
-                            <p class="mx-2 mb-0" style="font-weight: 200;">10 Jan, 2021</p>
-                        </div>
-                        <div class="col-lg-4">
-                            <img src="{{url('/images/indo-beach-nature.jpg')}}" alt="article-image" style="height: 100%;width: 100%">
+                            <div class="col-lg-4">
+                                <img src="{{$al->image}}" alt="article-image" style="height: 100%;width: 100%">
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="contentTwo my-2">
-                    <div class="row">
-                        <div class="col-lg-8 d-flex flex-column justify-content-between">
-                            <div class="author d-flex flex-row my-1 align-items-center">
-                                <img src="{{url('/images/anon-user.png')}}" class="rounded-circle float-left" alt="user" style="height: 18px;weight: 18px;">
-                                <p style="margin: 0px">M Faisal Ghozi</p>
-                            </div>
-                            <h5 class="mx-2"><strong>Lorem ipsum dolor sit, amet consectetur adipisicing elit</strong></h5>
-                            <p class="mx-2 mb-0" style="font-weight: 200;">10 Jan, 2021</p>
-                        </div>
-                        <div class="col-lg-4">
-                            <img src="{{url('/images/indo-beach-nature.jpg')}}" alt="article-image" style="height: 100%;width: 100%">
-                        </div>
-                    </div>
-                </div>
-                <div class="contentThree my-2">
-                    <div class="row">
-                        <div class="col-lg-8 d-flex flex-column justify-content-between">
-                            <div class="author d-flex flex-row my-1 align-items-center">
-                                <img src="{{url('/images/anon-user.png')}}" class="rounded-circle float-left" alt="user" style="height: 18px;weight: 18px;">
-                                <p style="margin: 0px">M Faisal Ghozi</p>
-                            </div>
-                            <h5 class="mx-2"><strong>Lorem ipsum dolor sit, amet consectetur adipisicing elit</strong></h5>
-                            <p class="mx-2 mb-0" style="font-weight: 200;">10 Jan, 2021</p>
-                        </div>
-                        <div class="col-lg-4">
-                            <img src="{{url('/images/indo-beach-nature.jpg')}}" alt="article-image" style="height: 100%;width: 100%">
-                        </div>
-                    </div>
-                </div>
-                <div class="contentFour my-2">
-                    <div class="row">
-                        <div class="col-lg-8 d-flex flex-column justify-content-between">
-                            <div class="author d-flex flex-row my-1 align-items-center">
-                                <img src="{{url('/images/anon-user.png')}}" class="rounded-circle float-left" alt="user" style="height: 18px;weight: 18px;">
-                                <p style="margin: 0px">M Faisal Ghozi</p>
-                            </div>
-                            <h5 class="mx-2"><strong>Lorem ipsum dolor sit, amet consectetur adipisicing elit</strong></h5>
-                            <p class="mx-2 mb-0" style="font-weight: 200;">10 Jan, 2021</p>
-                        </div>
-                        <div class="col-lg-4">
-                            <img src="{{url('/images/indo-beach-nature.jpg')}}" alt="article-image" style="height: 100%;width: 100%">
-                        </div>
-                    </div>
-                </div>
+                </a>
+                @endforeach
             </div>
         </div>
     </div>
@@ -126,25 +70,7 @@
                         <p class="card-text text-dark">{{substr($ar->description,0,100)}}...</p>
                         <p class="my-0">
                             <span class="text-dark">Category:</span> 
-                            <a href="/category/{{$ar->category_id}}" class="">
-                                @switch($ar->category_id)
-                                    @case(1)
-                                        {{$place="Beach"}}
-                                    @break
-                                    @case(2)
-                                        {{$place="Mountain"}}
-                                    @break
-                                    @case(3)
-                                        {{$place="Theme Park"}}
-                                    @break
-                                    @case(4)
-                                        {{$place="City"}}
-                                    @break
-                                    @case(5)
-                                        {{$place="Nature"}}
-                                    @break
-                                @endswitch
-                            </a>
+                            <a href="/category/{{$ar->category_id}}">{{$ar->category->name}}</a>
                         </p>
                     </div>
                 </div>

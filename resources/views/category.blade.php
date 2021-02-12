@@ -14,25 +14,7 @@
                         <p class="card-text text-dark">{{substr($ar->description,0,70)}}...</p>
                         <p class="my-0">
                             <span class="text-dark">Category:</span> 
-                            <a href="/category/{{$ar->category_id}}" class="">
-                                @switch($ar->category_id)
-                                    @case(1)
-                                        {{$place="Beach"}}
-                                    @break
-                                    @case(2)
-                                        {{$place="Mountain"}}
-                                    @break
-                                    @case(3)
-                                        {{$place="Theme Park"}}
-                                    @break
-                                    @case(4)
-                                        {{$place="City"}}
-                                    @break
-                                    @case(5)
-                                        {{$place="Nature"}}
-                                    @break
-                                @endswitch
-                            </a>
+                            <a href="/category/{{$ar->category_id}}">{{$ar->category->name}}</a>
                         </p>
                     </div>
                 </div>

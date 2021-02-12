@@ -27,9 +27,17 @@ class HomeController extends Controller
      */
     public function index()
     {   
-        $articles = Article::All();
-        // return $articles;
-        return view('home', ['articles' => $articles]);
+        //GET RANDOM ARTICLE
+        $articleRandom = Article::inRandomOrder()->first();
+        // return $articleRandom;
+
+        //GET 4 LATEST ARTICLE
+        $articleLatest = Article::with('user')->latest()->take(4)->get();
+        // return $articleLatest;
+
+        // GET ARTICLE
+        $articles = Article::with('category')->get();
+        return view('home', ['articles' => $articles, 'articleRandom' => $articleRandom, 'articleLatest' => $articleLatest]);
     }
 
     public function category($id){
