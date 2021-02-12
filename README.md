@@ -5,14 +5,16 @@
 ## 🏭 Production Progress
 
 -   Creating Landing Page (12/02/2021) ✔️
--   Greeting Page for User
--   Creating Abous Us Page
+-   Greeting Page for User (Change into flash message) (12/02/2021) ✔️
+-   Creating Abous Us Page (12/02/2021) ✔️
 -   Creating HomePage & Setup DB (10/02/2021) ✔️
 -   Creating category page ✔️ (11/02/2021)
 -   creating detail story/article page (11/02/2021) ✔️
 -   Refixing login & register page (11/02/2021) ✔️
 -   Creating admin feature : Admin Menu (Showing article user list) ✔️ & User Menu ✔️ (11/02/2021)
 -   Creating user feature : change profile (11/02/2020) ✔️ & blog (CRUD of article) Setting ✔️ (11/02/2021)
+-   Testing Feature Stage
+-   Deployment Stage
 
 ## ❓ About
 

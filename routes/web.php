@@ -16,6 +16,9 @@ use Illuminate\Support\Facades\Route;
 // Routing to Landing Page
 Route::get('/', 'HomeController@welcome');
 
+// Routing to Abous Us Page
+Route::get('/aboutus', 'HomeController@about');
+
 // Routing to Article
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/article/{id}', 'ArticleController@show');

@@ -20,6 +20,17 @@
 </div> --}}
 
 <div class="container recommended Article my-4">
+    
+    @if (session('login'))
+    <div class="alert alert-success" role="alert">
+        {{ session('login') }}
+    </div>
+    @elseif (session('logout'))
+    <div class="alert alert-danger" role="alert">
+        {{ session('logout') }}
+    </div>
+    @endif
+
     <div class="row">
         <div class="col-lg-6 border-right d-flex justify-content-start align-items-center">
             <div class="d-flex flex-column">

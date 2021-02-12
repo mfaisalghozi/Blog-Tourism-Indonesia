@@ -71,7 +71,7 @@
                                 </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About Us</a>
+                            <a class="nav-link" href="/aboutus">About Us</a>
                         </li>
                         @elseif (Auth::user()->role == 'admin')
                         <li class="nav-item">

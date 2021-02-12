@@ -62,4 +62,8 @@ class HomeController extends Controller
         User::destroy($id);
         return redirect('/user');
     }
+
+    public function about(){
+        return view('aboutUs');
+    }
 }
