@@ -28,3 +28,8 @@ final exam project required to create a web-based application using Laravel 7 fr
 -   Image : Unsplash User [Muhammad Rizky](https://unsplash.com/photos/rN3R-lKI45M)
 -   Image : Unsplash User [Eko Herwantoro](https://unsplash.com/photos/mAxA2OmTmKA)
 -   Image : Unsplash User [yukkien](https://unsplash.com/photos/ViLAbC-Id58)
+-   Image : Unsplash User [bayusyaits](https://unsplash.com/photos/Uz-LsnjxJ6U)
+-   Image : Unsplash User [falaqkun](https://unsplash.com/photos/PIIKmwkQp8g)
+-   Image : Unsplash User [elishavisi](https://unsplash.com/photos/RN6ts8IZ4_0)
+-   Image : Unsplash User [everson33r](https://unsplash.com/photos/JEyzTqxNAOM)
+-   Image : Unsplash User [anniesprat](https://unsplash.com/photos/UrGs6o0emfA)
