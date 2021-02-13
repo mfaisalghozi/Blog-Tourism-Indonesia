@@ -15,6 +15,7 @@
 -   Creating user feature : change profile (11/02/2020) ✔️ & blog (CRUD of article) Setting ✔️ (11/02/2021)
 -   Testing Feature Stage (Completed) (12/02/2021) ✔️
 -   Deployment Stage (Completed) (12/02/2021) ✔️
+-   Closing Stage (13/02/2021) ✔️
 
 ## ❓ About
 
