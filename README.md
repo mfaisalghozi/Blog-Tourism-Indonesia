@@ -2,7 +2,9 @@
 
 ---
 
-## 🏭 Production Progress
+## 🏭 Production
+
+### Progress :
 
 -   Creating Landing Page (12/02/2021) ✔️
 -   Greeting Page for User (Change into flash message) (12/02/2021) ✔️
@@ -16,6 +18,10 @@
 -   Testing Feature Stage (Completed) (12/02/2021) ✔️
 -   Deployment Stage (Completed) (12/02/2021) ✔️
 -   Closing Stage (13/02/2021) ✔️
+
+### Issue:
+
+-   Login user role not validate user/admin
 
 ## ❓ About
 
