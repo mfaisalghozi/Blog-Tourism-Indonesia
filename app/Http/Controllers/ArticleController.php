@@ -51,7 +51,8 @@ class ArticleController extends Controller
                 ]);
                 $extension = $request->image->extension();
                 $request->image->storeAs('/public', $validated['name'].".".$extension);
-                $url = Storage::url($validated['name'].".".$extension);
+                // $url = Storage::url($validated['name'].".".$extension);
+                $url = Storage::disk('public')->put($validated['name'].".".$extension);
 
                 $user = User::Where('id',$userId)->firstOrFail();
                 $category = Category::Where('name',$request->category)->firstOrFail();
