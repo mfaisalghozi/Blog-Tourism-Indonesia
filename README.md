@@ -21,7 +21,7 @@
 
 ### Issue:
 
--   Login user role not validate user/admin
+-   Login user role not validate user/admin (16/02/2021) ✔️
 
 ## ❓ About
 
