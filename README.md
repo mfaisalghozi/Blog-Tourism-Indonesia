@@ -22,6 +22,7 @@
 ### Issue :
 
 -   Login user role not validate user/admin (16/02/2021) ✔️
+-   Image Upload Wont Load since Heroku not allowed FileSystem
 
 ## ❓ About
 
