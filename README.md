@@ -10,16 +10,16 @@
 -   Greeting Page for User (Change into flash message) (12/02/2021) ✔️
 -   Creating Abous Us Page (12/02/2021) ✔️
 -   Creating HomePage & Setup DB (10/02/2021) ✔️
--   Creating category page ✔️ (11/02/2021)
+-   Creating category page (11/02/2021) ✔️
 -   creating detail story/article page (11/02/2021) ✔️
 -   Refixing login & register page (11/02/2021) ✔️
--   Creating admin feature : Admin Menu (Showing article user list) ✔️ & User Menu ✔️ (11/02/2021)
--   Creating user feature : change profile (11/02/2020) ✔️ & blog (CRUD of article) Setting ✔️ (11/02/2021)
+-   Creating admin feature : Admin Menu (Showing article user list) ✔️ & User Menu (11/02/2021) ✔️
+-   Creating user feature : change profile (11/02/2020) ✔️ & blog (CRUD of article) Setting (11/02/2021) ✔️
 -   Testing Feature Stage (Completed) (12/02/2021) ✔️
 -   Deployment Stage (Completed) (12/02/2021) ✔️
 -   Closing Stage (13/02/2021) ✔️
 
-### Issue:
+### Issue :
 
 -   Login user role not validate user/admin (16/02/2021) ✔️
 
