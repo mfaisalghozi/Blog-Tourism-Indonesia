@@ -14,10 +14,16 @@
                         <div class="form-group row">
                             <label for="LoginAs" class="col-md-4 col-form-label text-md-right" >Login As</label>
                             <div class="col-md-6">
-                                <select class="form-control" id="LoginAs" name="role">
+                                <select class="form-control @error('role') is-invalid @enderror" id="LoginAs" name="role">
                                     <option value="user">User</option>
                                     <option value="admin">Admin</option>
                                 </select>
+                                
+                                @error('role')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                                @enderror
                             </div>
                         </div>
 

@@ -15,8 +15,8 @@
                 </div>
                 <div class="option text-detail-article">
                     <a href="#" class="mx-2"><i class="fa fa-thumbs-up" style="font-size:22px"></i></a>
-                    <a href="#" class="mx-2"><i class="fa fa-bookmark" style="font-size:22px"></i></a>
                     <a href="#" class="mx-2"><i class="fa fa-comments" style="font-size:22px"></i></a>
+                    <a href="#" class="mx-2"><i class="fa fa-bookmark" style="font-size:22px"></i></a>
                 </div>
             </div>
             <img src="{{$article->image}}" class="img-fluid mb-4 image-article-detail" alt="Responsive image">
