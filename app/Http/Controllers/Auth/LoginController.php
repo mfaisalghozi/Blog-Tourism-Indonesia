@@ -22,7 +22,9 @@ class LoginController extends Controller
 
     use AuthenticatesUsers;
 
-
+    //===============================================
+    // Overriding Method From AuthenticatesUsers File
+    //===============================================
     protected function authenticated(Request $request, $user)
     {
         $request->session()->flash('login','Welcome To The Home '.$user->name.', Enjoy !');
@@ -32,6 +34,41 @@ class LoginController extends Controller
         $request->session()->flash('logout', 'You are logged out, see you !');
     }
 
+    
+    protected function credentials(Request $request)
+    {
+        return $request->only($this->username(), 'password', 'role');
+    }
+
+    protected function validateLogin(Request $request)
+    {
+        $request->validate([
+            $this->username() => 'required|string',
+            'password' => 'required|string',
+            'role' => 'required|string',
+        ]);
+    }
+
+    public function logout(Request $request)
+    {
+        $this->guard()->logout();
+
+        $request->session()->invalidate();
+
+        $request->session()->regenerateToken();
+
+        if ($response = $this->loggedOut($request)) {
+            return $response;
+        }
+
+        return $request->wantsJson()
+            ? new JsonResponse([], 204)
+            : redirect('/home');
+    }
+
+    //===============================================
+    // Default Method
+    //===============================================
 
     /**
      * Where to redirect users after login.
