@@ -34,7 +34,6 @@ class LoginController extends Controller
         $request->session()->flash('logout', 'You are logged out, see you !');
     }
 
-    
     protected function credentials(Request $request)
     {
         return $request->only($this->username(), 'password', 'role');
