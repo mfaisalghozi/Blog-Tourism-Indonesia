@@ -1,6 +1,22 @@
 # 🧻 Final Project Web Programming
 
----
+## ⚙️ Installation Guide
+
+### Using Git CLI :
+
+-   `git clone https://github.com/mfaisalghozi/Blog-Tourism-Indonesia`
+-   `composer install`
+-   `npm install` or `yarn`
+-   `cp .env.example .env`
+-   `php artisan key: generate`
+
+### Database Creation :
+
+-   Turn On XAMPP MySQL
+-   Creating new DB on phpmyadmin named `finalexam`
+-   In the `.env` file fill in the `DB_HOST`, `DB_PORT`, `DB_DATABASE`, `DB_USERNAME`, and `DB_PASSWORD` options to match the credentials of the database you just created
+-   Migrate DB with `php artisan migrate`
+-   Seeding Database with `php artisan db:seed`
 
 ## 🏭 Production
 
@@ -22,7 +38,6 @@
 ### Issue :
 
 -   Login user role not validate user/admin (16/02/2021) ✔️
--   Image Upload Wont Load since Heroku not allowed FileSystem
 
 ## ❓ About
 
