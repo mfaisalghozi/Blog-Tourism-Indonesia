@@ -2,6 +2,12 @@
 
 ## ⚙️ Installation Guide
 
+### Using OneDrive Link ***(Binusian Only)***:
+- go to `https://binusianorg-my.sharepoint.com/personal/muhammad_ghozi_binus_ac_id/_layouts/15/guestaccess.aspx?guestaccesstoken=Wv5LPFjTRImVi32LXN45NFygyIPsYPuI4TAvJvg9oLw%3D&docid=2_0f4d2496a1f704a42883e38e0ceb25c25&rev=1&e=sQIAfq`
+- click `download` project file
+- extract and insert into IDE
+- continue to `Database Creation` below
+
 ### Using Git CLI :
 
 -   `git clone https://github.com/mfaisalghozi/Blog-Tourism-Indonesia`
